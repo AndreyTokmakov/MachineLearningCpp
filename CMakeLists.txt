@@ -18,6 +18,7 @@ else()
 endif()
 
 add_subdirectory(Common)
+add_subdirectory(Eigen)
 add_subdirectory(Experiments)
 add_subdirectory(LinearRegression)
 add_subdirectory(Utilities)

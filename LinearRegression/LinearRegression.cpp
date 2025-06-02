@@ -34,9 +34,12 @@ namespace LinearRegression::Utilities {
 
     [[nodiscard]]
     std::pair<std::vector<double>, std::vector<double>>
-    GenerateData(double slope, double intercept,
-                 double start, double end,
-                 size_t size, double noise)
+    GenerateData(const double slope,
+                 const double intercept,
+                 const double start,
+                 const double end,
+                 const size_t size,
+                 const double noise)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -59,7 +62,8 @@ namespace LinearRegression::SimpleTests {
         return x * a + b;
     };
 
-    void DemoTest() {
+    void DemoTest()
+    {
         const float A = 3.2, B = 5;
         const auto& [X, Y] = Utilities::GenerateData(A, B, 1, 100, 200, 10);
 
@@ -92,8 +96,9 @@ namespace LinearRegression::SimpleTests {
         }
     }
 
-    void DemoTest2() {
-        const float A = 3.2, B = 5;
+    void DemoTest2()
+    {
+        constexpr float A = 3.2, B = 5;
         const auto& [X, Y] = Utilities::GenerateData(A, B, 1, 60, 120, 10);
         const size_t dataSize { X.size() };
 
