@@ -17,5 +17,7 @@ else()
     set(THIRD_PARTY_DIR /home/andtokm/Projects/third_party)
 endif()
 
+add_subdirectory(Common)
 add_subdirectory(Experiments)
+add_subdirectory(LinearRegression)
 add_subdirectory(Utilities)

@@ -1,2 +1,1 @@
-# CppCoroutines
-Aims to study C++ coroutines
+# C++ Machine Learning experiments
